@@ -1,21 +1,10 @@
 {{#> layouts/main
-    title="Gulp test"
+    title="Test"
     description="Description"
     keywords="Keyword"
 }}
+  {{#*inline "page-content"}}
+    {{> includes/nav }}
 
-  {{#*inline "styles-block"}}
-    <link
-      href="/assets/css/page.css"
-      rel="stylesheet"
-      />
   {{/inline}}
-
-
-  {{#*inline "scripts-block"}}
-    <script src="/assets/js/vendor.min.js"></script>
-    <script src="/assets/js/main.min.js"></script>
-  {{/inline}}
-
-
 {{/layouts/main}}

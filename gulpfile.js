@@ -137,11 +137,7 @@ function css() {
         grid: 'autoplace',
       })
     )
-    .pipe(
-      purgecss({
-        content: ['src/*.html', 'src/**/*.hbs'],
-      })
-    )
+
     .pipe(header(banner.full, { packageDetails: packageDetails }))
     .pipe(dest(paths.styles.output))
     .pipe(sourcemaps.init())

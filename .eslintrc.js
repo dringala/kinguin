@@ -10,7 +10,7 @@ module.exports = {
 		sourceType: 'module'
 	},
 	rules: {
-		'no-console': 'off',
+		"no-console": 0,
 		'no-unused-vars': 'off',
 		'no-constant-condition': 'off'
 	}

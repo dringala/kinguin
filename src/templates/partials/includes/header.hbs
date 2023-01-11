@@ -1,4 +1,12 @@
 {{! includes/footer.hbs }}
-<p>
-  A basic header
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      A basic header
+      {{> components/image-test
+          logo-src="/assets/img/hero"
+          logo-alt="Picture of a code monkey"
+      }}
+    </div>
+  </div>
+</div>

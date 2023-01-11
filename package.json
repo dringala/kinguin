@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonwelsh/gulp-hbs-boilerplate.git"
+    "url": "git+https://github.com/dringala/kinguin.git"
   },
   "keywords": [
     "gulp",
