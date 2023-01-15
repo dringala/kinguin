@@ -1,0 +1,43 @@
+.hero-cta {
+  display: flex;
+  position: relative;
+  min-height: 85vh;
+  img {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .container-xl {
+    position: relative;
+    z-index: 1;
+  }
+  h1 {
+    color: $white;
+    font-family: $silka-bold;
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 6.2rem;
+  }
+  p {
+    margin: 2rem 0;
+    padding-right: 6rem;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: $white;
+    font-family: $silka-regular;
+  }
+  .btn {
+    min-width: 196px;
+    font-size: 2rem;
+    &:first-of-type {
+      margin-right: 20px;
+    }
+  }
+  .btn--secondary {
+    color: $dark-orange;
+  }
+}

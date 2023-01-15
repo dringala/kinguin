@@ -60,6 +60,11 @@ const paths = {
     input: 'src/assets/img/**/*.{png,jpg,jpeg,gif,svg}',
     output: 'build/assets/img/',
   },
+  // FONTS
+  fonts: {
+    input: 'src/assets/fonts/*.{eot,ttf,woff,woff2}',
+    output: 'build/assets/fonts/',
+  },
   // VIDEO
   vid: {
     input: 'src/assets/video/*.mp4',
@@ -218,6 +223,10 @@ function img() {
 function video() {
   return src(paths.vid.input).pipe(newer(paths.vid.output)).pipe(dest(paths.vid.output))
 }
+// NOTE: COPY FONT FILES
+function fonts() {
+  return src(paths.fonts.input).pipe(newer(paths.fonts.output)).pipe(dest(paths.fonts.output))
+}
 
 // NOTE: INITIATE SERVER
 function server(done) {
@@ -263,7 +272,7 @@ exports.clean = series(clean)
 exports.media = series(img, video)
 
 // COMPILE, WATCH AND RELOAD (gulp watch)
-exports.watch = parallel(series(hbs, css, js), series(img, video), series(server, changed))
+exports.watch = parallel(series(hbs, css, js, fonts), series(img, video), series(server, changed))
 
 // CLEAN OLD AND COMPILE EVERYTHING NO BROWSER (gulp)
-exports.default = series(clean, parallel(hbs), parallel(css), parallel(js), parallel(img, series(video)))
+exports.default = series(clean, parallel(hbs), parallel(css), parallel(js), parallel(fonts), parallel(img, series(video)))

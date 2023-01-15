@@ -1,0 +1,41 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: 0.7rem 3.5rem;
+  border-radius: 3.5rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  text-decoration: none;
+  font-family: $silka-regular;
+  font-weight: 500;
+  transition: all 0.15s $animation-ease;
+}
+
+.btn--primary {
+  background: $dark-orange;
+  color: $white;
+  border: 2px solid $dark-orange;
+  &:hover {
+    background: $white;
+    color: $dark-orange;
+  }
+}
+
+.btn--primary-inverted {
+  background: $white;
+  color: $dark-orange;
+  border: 2px solid $dark-orange;
+  &:hover {
+    background: $dark-orange;
+    color: $white;
+  }
+}
+
+.btn--secondary {
+  background: $white;
+  color: $grey;
+}
+
+.btn--full {
+  width: 100%;
+}

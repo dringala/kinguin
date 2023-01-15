@@ -4,12 +4,18 @@
 @import 'abstracts/mixins';
 
 @import 'base/resets';
+@import 'base/typography';
+
+@import 'vendor/vendor';
+
+@import 'components/buttons';
+@import 'components/hero-cta';
+@import 'components/video-block';
+@import 'components/text-image';
 
 @import 'layout/header';
 @import 'layout/navigation';
 @import 'layout/footer';
 
 @import 'pages/home';
-
-@import 'vendor/vendor';
 

@@ -1,10 +1,23 @@
 {{#> layouts/main
-    title="Test"
-    description="Description"
-    keywords="Keyword"
+  title="Test"
+  description="Description"
+  keywords="Keyword"
 }}
   {{#*inline "page-content"}}
-    {{> includes/nav }}
-
+    <div class="row">
+      <div class="col-12">
+        {{> components/hero-cta }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        {{> components/video-block }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        {{> components/text-left-image }}
+      </div>
+    </div>
   {{/inline}}
 {{/layouts/main}}
